@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
+            <a class="navbar-brand page-scroll" href="#page-top?lang={{ site.lang }}">
                 <img src="img/smallogo.png" alt="LumenSquad Logo" style="height: 100%;">
             </a>
         </div>
@@ -17,16 +17,16 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#about">{{ site.data[site.lang].nav.about }}</a>
+                    <a class="page-scroll" href="#about?lang={{ site.lang }}">{{ site.data[site.lang].nav.about }}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">{{ site.data[site.lang].nav.services }}</a>
+                    <a class="page-scroll" href="#services?lang={{ site.lang }}">{{ site.data[site.lang].nav.services }}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">{{ site.data[site.lang].nav.portfolio }}</a>
+                    <a class="page-scroll" href="#portfolio?lang={{ site.lang }}">{{ site.data[site.lang].nav.portfolio }}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">{{ site.data[site.lang].nav.contact }}</a>
+                    <a class="page-scroll" href="#contact?lang={{ site.lang }}">{{ site.data[site.lang].nav.contact }}</a>
                 </li>
                 <li>
                     <form method="get" action="/" class="language-selector">
@@ -42,3 +42,4 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
+
