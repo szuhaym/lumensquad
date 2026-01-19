@@ -1,0 +1,13 @@
+nav:
+  about: "About"
+  services: "Services"
+  portfolio: "Portfolio"
+  contact: "Contact"
+header:
+  logo_alt: "LumenSquad Logo"
+  description: "Welcome to LumenSquad, where light meets art."
+  button: "Learn More"
+cta:
+  heading: "Magical Lantern"
+  description: "Experience the magic of light and projection."
+  button: "Gallery"

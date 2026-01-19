@@ -1,0 +1,13 @@
+nav:
+  about: "Rólunk"
+  services: "Mit nyújtunk"
+  portfolio: "Munkáink"
+  contact: "Kapcsolat"
+header:
+  logo_alt: "LumenSquad Logó"
+  description: "Üdvözöljük a LumenSquad világában, ahol a fény találkozik a művészettel."
+  button: "Tovább"
+cta:
+  heading: "Bűvös Lámpás"
+  description: "Tapasztalja meg a fény és a vetítés varázsát."
+  button: "Galéria"
