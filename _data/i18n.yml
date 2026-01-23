@@ -1,5 +1,3 @@
-_data\i18n.yml
-````````
 en:
   nav:
     toggle: "Toggle navigation"
@@ -38,36 +36,36 @@ en:
 
 hu:
   nav:
-    toggle: "Navigáció váltása"
-    brand_alt: "LumenSquad logó"
-    about: "Rólunk"
-    services: "Mit nyújtunk"
-    portfolio: "Munkáink"
+    toggle: "NavigÃ¡ciÃ³ vÃ¡ltÃ¡sa"
+    brand_alt: "LumenSquad logÃ³"
+    about: "RÃ³lunk"
+    services: "Mit nyÃºjtunk"
+    portfolio: "MunkÃ¡ink"
     contact: "Kapcsolat"
-  home_title: "Üdvözöljük"
-  about_text: "Szép dolgokat készítünk."
+  home_title: "ÃœdvÃ¶zÃ¶ljÃ¼k"
+  about_text: "SzÃ©p dolgokat kÃ©szÃ­tÃ¼nk."
   services:
-    heading: "Amit nyújtani tudunk"
+    heading: "Amit nyÃºjtani tudunk"
     box1:
-      title: "Analóg vetítés"
-      text: "Fényt"
+      title: "AnalÃ³g vetÃ­tÃ©s"
+      text: "FÃ©nyt"
     box2:
-      title: "Digitális technikák"
-      text: "Festünk"
+      title: "DigitÃ¡lis technikÃ¡k"
+      text: "FestÃ¼nk"
     box3:
-      title: "Egyedi tervezés"
-      text: "Vetítünk"
+      title: "Egyedi tervezÃ©s"
+      text: "VetÃ­tÃ¼nk"
     box4:
-      title: "Kreatív megoldások"
+      title: "KreatÃ­v megoldÃ¡sok"
       text: "Alkotunk"
   portfolio:
-    category: "Kategória"
+    category: "KategÃ³ria"
     project_name: "Projekt neve"
-    img_alt: "Portfólió kép"
+    img_alt: "PortfÃ³liÃ³ kÃ©p"
   call_to_action:
     heading: "Laterna Magica"
-    text: "A vetítéseknél alkalmazott technika õse a Laterna Magica — a Bûvös Lámpás. Mára az épületek architekturális vetítése (Mapping) önálló mûvészeti ággá nõtte ki magát. Installációink analóg és digitális képeket, áttetszõ vásznakat és finom mozgást kombinálnak."
-    button: "Galéria"
+    text: "A vetÃ­tÃ©seknÃ©l alkalmazott technika Å‘se a Laterna Magica - a BÅ±vÃ¶s LÃ¡mpÃ¡s. MÃ¡ra az Ã©pÃ¼letek architekturÃ¡lis vetÃ­tÃ©se (Mapping) Ã¶nÃ¡llÃ³ mÅ±vÃ©szeti Ã¡ggÃ¡ nÅ‘tte ki magÃ¡t. InstallÃ¡ciÃ³ink analÃ³g Ã©s digitÃ¡lis kÃ©peket, Ã¡ttetszÅ‘ vÃ¡sznakat Ã©s finom mozgÃ¡st kombinÃ¡lnak."
+    button: "GalÃ©ria"
   contact:
-    heading: "Lépj velünk kapcsolatba!"
-    description: "Küldj nekünk emailt (nyomd meg a borítékot) vagy hívj minket ezen a számon: <a href=\"tel:+36703170825\">+36703170825</a>"
+    heading: "LÃ©pj velÃ¼nk kapcsolatba!"
+    description: "KÃ¼ldj nekÃ¼nk emailt (nyomd meg a borÃ­tÃ©kot) vagy hÃ­vj minket ezen a szÃ¡mon: <a href=\"tel:+36703170825\">+36703170825</a>"
