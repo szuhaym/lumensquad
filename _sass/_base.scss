@@ -349,31 +349,33 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
-/* Tight grid for portfolio: 2px total gap between columns (1px each side) */
-.portfolio-grid {
-  margin-left: -1px;   // cancel outer left padding so grid aligns with container edges
-  margin-right: -1px;  // cancel outer right padding
-}
+/* Tight portfolio grid: 2px gap between columns (1px each side) */
 .portfolio-grid > [class*='col-'] {
-  padding-left: 1px;
-  padding-right: 1px;
+  padding-left: 1px !important;
+  padding-right: 1px !important;
 }
 
-/* Ensure the portfolio-box visuals do not introduce extra gaps */
-.portfolio-box {
+/* Ensure grid visuals don't introduce extra gaps */
+.portfolio-grid {
+  /* keep container padding intact; only control column gutters */
+}
+
+/* Make the portfolio box fill the column (override previous max-width/margin) */
+.portfolio-grid .portfolio-box {
+  max-width: none !important;
+  margin: 0 !important;
   display: block;
-  margin: 0;
 }
 
-/* Images should fill their column and not introduce whitespace */
-.portfolio-box img {
+/* Images fill the column */
+.portfolio-grid .portfolio-box img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* Keep caption behavior the same */
-.portfolio-box .portfolio-box-caption {
+/* Keep caption behavior */
+.portfolio-grid .portfolio-box .portfolio-box-caption {
   left: 0;
   right: 0;
 }
