@@ -1,12 +1,12 @@
 nav:
-  about: "Rólunk"
-  services: "Mit nyújtunk"
-  portfolio: "Munkáink"
+  about: "RÃ³lunk"
+  services: "Mit nyÃºjtunk"
+  portfolio: "MunkÃ¡ink"
   contact: "Kapcsolat"
 contact:
-  heading: "Lépj velünk kapcsolatba!"
-  paragraph: "Küldj nekünk emailt (nyomd meg a borítékot) vagy hívj minket ezen a számon: <a href='tel:+36703170825'>+36 70 317 0825</a>"
+  heading: "LÃ©pj velÃ¼nk kapcsolatba!"
+  paragraph: "KÃ¼ldj nekÃ¼nk emailt (nyomd meg a borÃ­tÃ©kot) vagy hÃ­vj minket ezen a szÃ¡mon: <a href='tel:+36703170825'>+36 70 317 0825</a>"
   email_label: "{{ site.email }}"
 home:
   header_title: "LumenSquad"
-  header_sub: "Kreatív fejlesztés és design"
+  header_sub: "KreatÃ­v fejlesztÃ©s Ã©s design"
