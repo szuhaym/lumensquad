@@ -3,10 +3,44 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | default: site.description }}">
     <meta name="author" content="">
 
-    <title>LumenSquad</title>
+    <title>{{ page.title | default: site.title }}</title>
+
+    <!-- Favicons / icons (browser tab) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.baseurl }}/img/favicons/site.webmanifest">
+    <meta name="theme-color" content="#111827">
+    <!-- keep existing fallback to /favicon.ico if you want legacy support -->
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | default: site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url | default: site.baseurl }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/smallogo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | default: site.description }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/img/smallogo.png">
+
+    <!-- JSON-LD Organization (helps Google show logo in result panels) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "{{ site.title | escape }}",
+      "url": "{{ site.url }}{{ site.baseurl }}",
+      "logo": "{{ site.url }}{{ site.baseurl }}/img/smallogo.png"
+    }
+    </script>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css" type="text/css">
