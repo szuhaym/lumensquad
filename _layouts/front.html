@@ -2,19 +2,13 @@
 <html lang="{{ site.lang }}">
 
 {% include head.html %}
+{% assign lang = page.lang | default: site.lang %}
+{% if page.url contains 'lang=' %}
+  {% assign lang = page.url | split: 'lang=' | last | split: '&' | first %}
+{% endif %}
+{% assign site.lang = lang %}
 
 <body id="page-top">
-  {% assign lang = page.lang | default: site.lang %}
-  {% if page.url contains 'lang=' %}
-    {% assign lang = page.url | split: 'lang=' | last | split: '&' | first %}
-  {% endif %}
-  {% assign supported_langs = "en,hu" | split: ',' %}
-  {% if supported_langs contains lang %}
-    {% assign site.lang = lang %}
-  {% else %}
-    {% assign site.lang = "en" %}
-  {% endif %}
-
   {% include nav.html %}
   {% include header.html %}
   {% include call-to-action.html %}
@@ -23,3 +17,5 @@
   {% include contact.html %}
   {% include scripts.html %}
 </body>
+
+</html>
