@@ -10,3 +10,21 @@ contact:
 home:
   header_title: "LumenSquad"
   header_sub: "Kreatív fejlesztés és design"
+  cta: "Tovább"
+call_to_action:
+  heading: "Laterna Magica"
+  text: "A vetítések évszázadok óta bűvölik a közönséget. Csapatunk épületeket és belső tereket varázsol át fényinstallációival."
+  button: "Galéria"
+services:
+  heading: "Amit nyújtani tudunk"
+  item1_title: "Analóg vetítés"
+  item1_desc: "Hagyományos vetítési technikák."
+  item2_title: "Digitális technikák"
+  item2_desc: "Kortárs mapping és digitális vetítések."
+  item3_title: "Egyedi tervezés"
+  item3_desc: "Projektre szabott tervezés."
+  item4_title: "Kreatív megoldások"
+  item4_desc: "Koncepció, gyártás és kivitelezés."
+portfolio:
+  project_category: "Kategória"
+  project_name: "Projekt neve"

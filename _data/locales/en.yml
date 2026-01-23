@@ -10,3 +10,21 @@ contact:
 home:
   header_title: "LumenSquad"
   header_sub: "Creative development & design"
+  cta: "Learn More"
+call_to_action:
+  heading: "Laterna Magica"
+  text: "Projections have fascinated audiences for centuries. Our team transforms buildings and interiors with light-based installations."
+  button: "Gallery"
+services:
+  heading: "What we offer"
+  item1_title: "Analog Projection"
+  item1_desc: "Traditional light projection techniques."
+  item2_title: "Digital Techniques"
+  item2_desc: "Contemporary digital mapping and projection."
+  item3_title: "Custom Design"
+  item3_desc: "Bespoke design for each project."
+  item4_title: "Creative Solutions"
+  item4_desc: "Concept, production and execution."
+portfolio:
+  project_category: "Category"
+  project_name: "Project Name"

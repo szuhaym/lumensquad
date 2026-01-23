@@ -1,10 +1,16 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.locales[lang] %}
+{% assign prefix = "" %}
+{% if lang != site.default_lang %}
+  {% assign prefix = "/" | append: lang %}
+{% endif %}
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <img src="{{ site.baseurl }}/img/biglogo.png" alt="Pécsi Fényfestő Műhely - Labor Lumensquad" style="max-width: 100%; height: auto;">
+            <img src="{{ site.baseurl }}/img/biglogo.png" alt="{{ t.home.header_title }}" style="max-width: 100%; height: auto;">
             <hr>
-            <p>A Pécsi Fényfestő Műhely - Labor Lumensquad - csapata lassan két évtizede foglalkozik fényfestéssel. Az idehaza és külföldön is ismert alkotóműhely fesztiválok egyedi helyszíneit, épületek homlokzatait, elhagyatott csarnokok belső tereit varázsolja át, öltözteti fényruhába egy-egy alkalomra.</p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">Tovább</a>
+            <p>{{ t.home.header_sub }}</p>
+            <a href="{{ prefix }}#about" class="btn btn-primary btn-xl page-scroll">{{ t.home.cta }}</a>
         </div>
     </div>
 </header>
