@@ -349,3 +349,32 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+/* Tight grid for portfolio: 2px total gap between columns (1px each side) */
+.portfolio-grid {
+  margin-left: -1px;   // cancel outer left padding so grid aligns with container edges
+  margin-right: -1px;  // cancel outer right padding
+}
+.portfolio-grid > [class*='col-'] {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+/* Ensure the portfolio-box visuals do not introduce extra gaps */
+.portfolio-box {
+  display: block;
+  margin: 0;
+}
+
+/* Images should fill their column and not introduce whitespace */
+.portfolio-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Keep caption behavior the same */
+.portfolio-box .portfolio-box-caption {
+  left: 0;
+  right: 0;
+}
+
