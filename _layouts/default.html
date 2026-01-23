@@ -38,14 +38,19 @@
     {{ content }}
   </main>
 
-  <!-- Optional sections that may be included site-wide (uncomment if desired) -->
-  <!-- {% include call-to-action.html %} -->
-  <!-- {% include services.html %} -->
-  <!-- {% include portfolio.html %} -->
-  <!-- {% include contact.html %} -->
+  {% comment %}
+    Optional site-wide includes — use Liquid comments to prevent Jekyll from
+    trying to evaluate includes that aren't present in _includes/.
+    To enable any, remove the surrounding {% raw %}{% comment %}{% endraw %} lines
+    and ensure the included file exists.
+  {% endcomment %}
 
-  <!-- Footer placeholder (if you have one uncomment) -->
-  <!-- {% include footer.html %} -->
+  {% comment %}{% include call-to-action.html %}{% endcomment %}
+  {% comment %}{% include services.html %}{% endcomment %}
+  {% comment %}{% include portfolio.html %}{% endcomment %}
+  {% comment %}{% include contact.html %}{% endcomment %}
+
+  {% comment %}{% include footer.html %}{% endcomment %}
 
   <!-- Scripts (paths match existing head references) -->
   <script src="{{ '/js/jquery.min.js' | relative_url }}"></script>
