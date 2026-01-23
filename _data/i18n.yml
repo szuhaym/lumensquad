@@ -1,0 +1,73 @@
+_data\i18n.yml
+````````
+en:
+  nav:
+    toggle: "Toggle navigation"
+    brand_alt: "LumenSquad Logo"
+    about: "About"
+    services: "Services"
+    portfolio: "Portfolio"
+    contact: "Contact"
+  home_title: "Welcome"
+  about_text: "We build beautiful things."
+  services:
+    heading: "What we offer"
+    box1:
+      title: "Analog Projection"
+      text: "Light"
+    box2:
+      title: "Digital Techniques"
+      text: "We paint"
+    box3:
+      title: "Custom Design"
+      text: "We project"
+    box4:
+      title: "Creative Solutions"
+      text: "We create"
+  portfolio:
+    category: "Category"
+    project_name: "Project Name"
+    img_alt: "Portfolio image"
+  call_to_action:
+    heading: "Laterna Magica"
+    text: "Projection techniques date back centuries. Today architectural mapping transforms buildings in seconds. Our installations combine analog imagery, translucent screens and motion to create immersive experiences."
+    button: "Gallery"
+  contact:
+    heading: "Get in touch"
+    description: "Send us an email (press the envelope) or call us at: <a href=\"tel:+36703170825\">+36703170825</a>"
+
+hu:
+  nav:
+    toggle: "Navigáció váltása"
+    brand_alt: "LumenSquad logó"
+    about: "Rólunk"
+    services: "Mit nyújtunk"
+    portfolio: "Munkáink"
+    contact: "Kapcsolat"
+  home_title: "Üdvözöljük"
+  about_text: "Szép dolgokat készítünk."
+  services:
+    heading: "Amit nyújtani tudunk"
+    box1:
+      title: "Analóg vetítés"
+      text: "Fényt"
+    box2:
+      title: "Digitális technikák"
+      text: "Festünk"
+    box3:
+      title: "Egyedi tervezés"
+      text: "Vetítünk"
+    box4:
+      title: "Kreatív megoldások"
+      text: "Alkotunk"
+  portfolio:
+    category: "Kategória"
+    project_name: "Projekt neve"
+    img_alt: "Portfólió kép"
+  call_to_action:
+    heading: "Laterna Magica"
+    text: "A vetítéseknél alkalmazott technika õse a Laterna Magica — a Bûvös Lámpás. Mára az épületek architekturális vetítése (Mapping) önálló mûvészeti ággá nõtte ki magát. Installációink analóg és digitális képeket, áttetszõ vásznakat és finom mozgást kombinálnak."
+    button: "Galéria"
+  contact:
+    heading: "Lépj velünk kapcsolatba!"
+    description: "Küldj nekünk emailt (nyomd meg a borítékot) vagy hívj minket ezen a számon: <a href=\"tel:+36703170825\">+36703170825</a>"

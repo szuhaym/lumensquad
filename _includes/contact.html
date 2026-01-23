@@ -1,17 +1,17 @@
 <section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Lépj velünk kapcsolatba!</h2>
-                <hr class="primary">
-                <p>Küldj nekünk emailt (nyomd meg a borítékot) vagy hívj minket ezen a számon: <a href="tel:+36703170825">+36703170825</a></p>
-            </div>
-                <div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="mailto:szuhaym@gmail.com">
-            <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>{{ site.email }}</p>
-            </a>
-        </div>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <h2 class="section-heading">{% include t.html key="contact.heading" %}</h2>
+        <hr class="primary">
+        <p>{% include t.html key="contact.description" %}</p>
+      </div>
+      <div class="col-lg-2 col-lg-offset-1 text-center">
+        <a href="mailto:{{ site.email }}">
+          <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+          <p>{{ site.email }}</p>
+        </a>
+      </div>
     </div>
+  </div>
 </section>

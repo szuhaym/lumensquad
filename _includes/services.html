@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Amit nyújtani tudunk</h2>
+                <h2 class="section-heading">{% include t.html key="services.heading" %}</h2>
                 <hr class="primary">
             </div>
         </div>
@@ -12,29 +12,29 @@
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                    <h3>Analóg vetítés</h3>
-                    <p class="text-muted">Fényt</p>
+                    <h3>{% include t.html key="services.box1.title" %}</h3>
+                    <p class="text-muted">{% include t.html key="services.box1.text" %}</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                    <h3>Digitális technikák</h3>
-                    <p class="text-muted">Festünk</p>
+                    <h3>{% include t.html key="services.box2.title" %}</h3>
+                    <p class="text-muted">{% include t.html key="services.box2.text" %}</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                    <h3>Egyedi tervezés</h3>
-                    <p class="text-muted">Vetítünk</p>
+                    <h3>{% include t.html key="services.box3.title" %}</h3>
+                    <p class="text-muted">{% include t.html key="services.box3.text" %}</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                    <h3>Kreatív megoldások</h3>
-                    <p class="text-muted">Alkotunk</p>
+                    <h3>{% include t.html key="services.box4.title" %}</h3>
+                    <p class="text-muted">{% include t.html key="services.box4.text" %}</p>
                 </div>
             </div>
         </div>

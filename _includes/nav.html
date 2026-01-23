@@ -1,15 +1,15 @@
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only">{% include t.html key="nav.toggle" %}</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand page-scroll" href="#page-top">
-                <img src="img/smallogo.png" alt="LumenSquad Logo" style="height: 100%;">
+                <img src="img/smallogo.png" alt="{% include t.html key='nav.brand_alt' %}" style="height: 100%;">
             </a>
             </div>
 
@@ -17,16 +17,21 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#about">Rólunk</a>
+                    <a class="page-scroll" href="#about">{% include t.html key="nav.about" %}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Mit nyújtunk</a>
+                    <a class="page-scroll" href="#services">{% include t.html key="nav.services" %}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Munkáink</a>
+                    <a class="page-scroll" href="#portfolio">{% include t.html key="nav.portfolio" %}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Kapcsolat</a>
+                    <a class="page-scroll" href="#contact">{% include t.html key="nav.contact" %}</a>
+                </li>
+
+                <!-- Language selector (flag icons) -->
+                <li class="lang-list-item">
+                    {% include lang_switcher.html %}
                 </li>
             </ul>
         </div>
