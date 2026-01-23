@@ -9,11 +9,28 @@
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
         event.preventDefault();
+        var href = $(this).attr('href') || '';
+        var hashIndex = href.indexOf('#');
+
+        // if there's no fragment, treat as a normal link
+        if (hashIndex === -1) {
+            window.location = href;
+            return;
+        }
+
+        var fragment = href.substring(hashIndex); // "#about"
+        var $target = $(fragment);
+
+        // If element exists on page, animate scroll; otherwise navigate to href
+        if ($target.length) {
+            $('html, body').stop().animate({
+                scrollTop: ($target.offset().top - 50)
+            }, 1250, 'easeInOutExpo');
+        } else {
+            // If no target on current page (likely different page), navigate
+            window.location = href;
+        }
     });
 
     // Highlight the top nav as scrolling occurs
