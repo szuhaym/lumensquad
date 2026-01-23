@@ -18,15 +18,15 @@ keywords:
 
 # Hungarian keywords
 keywords_hu:
-  - "mapping vetítés"
-  - "vetítés mapping"
-  - "épületvetítés"
-  - "vizuális mûvészet"
+  - "mapping vetÃ­tÃ©s"
+  - "vetÃ­tÃ©s mapping"
+  - "Ã©pÃ¼letvetÃ­tÃ©s"
+  - "vizuÃ¡lis mÅ±vÃ©szet"
   - "LumenSquad"
-  - "Fényfestés"
-  - "Fényinstalláció"
-  - "Fény mûvészet"
-  - "Szuhay Márton"
+  - "FÃ©nyfestÃ©s"
+  - "FÃ©nyinstallÃ¡ciÃ³"
+  - "FÃ©ny mÅ±vÃ©szet"
+  - "Szuhay MÃ¡rton"
 
 # Build settings
 markdown: kramdown
