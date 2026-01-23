@@ -8,13 +8,12 @@
 
     <title>{{ page.title | default: site.title }}</title>
 
-    <!-- Favicons / icons (browser tab) -->
+    <!-- Favicons / icons (use img/smallogo.png as source) -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/img/favicons/favicon-16x16.png">
     <link rel="manifest" href="{{ site.baseurl }}/img/favicons/site.webmanifest">
     <meta name="theme-color" content="#111827">
-    <!-- keep existing fallback to /favicon.ico if you want legacy support -->
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
 
     <!-- Open Graph / Social -->
@@ -31,7 +30,7 @@
     <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | default: site.description }}">
     <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/img/smallogo.png">
 
-    <!-- JSON-LD Organization (helps Google show logo in result panels) -->
+    <!-- JSON-LD Organization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -56,8 +55,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>

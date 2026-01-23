@@ -8,6 +8,26 @@ url: "https://www.lumensquad.org" # the base hostname & protocol for your site
 twitter_username:
 github_username:
 
+# Add for SEO (English defaults)
+keywords:
+  - "light mapping"
+  - "projection mapping"
+  - "architectural projection"
+  - "visual art"
+  - "LumenSquad"
+
+# Hungarian keywords
+keywords_hu:
+  - "mapping vetítés"
+  - "vetítés mapping"
+  - "épületvetítés"
+  - "vizuális mûvészet"
+  - "LumenSquad"
+  - "Fényfestés"
+  - "Fényinstalláció"
+  - "Fény mûvészet"
+  - "Szuhay Márton"
+
 # Build settings
 markdown: kramdown
 
