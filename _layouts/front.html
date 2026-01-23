@@ -2,11 +2,6 @@
 <html lang="{{ site.lang }}">
 
 {% include head.html %}
-{% assign lang = page.lang | default: site.lang %}
-{% if page.url contains 'lang=' %}
-  {% assign lang = page.url | split: 'lang=' | last | split: '&' | first %}
-{% endif %}
-{% assign site.lang = lang %}
 
 <body id="page-top">
   {% include nav.html %}
