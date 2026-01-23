@@ -5,18 +5,6 @@
  */
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-
-.language-selector {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-.language-selector select {
-  padding: 5px;
-  font-size: 14px;
-}
-
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
