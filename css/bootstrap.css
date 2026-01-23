@@ -6,12 +6,12 @@
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
-language-selector {
+.language-selector {
   display: inline-block;
   margin-left: 15px;
 }
 
-language-selector select {
+.language-selector select {
   padding: 5px;
   font-size: 14px;
 }
