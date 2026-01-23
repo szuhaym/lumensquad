@@ -1,36 +1,40 @@
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
-                <img src="img/smallogo.png" alt="LumenSquad Logo" style="height: 100%;">
-            </a>
-            </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll" href="#about">Rólunk</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#services">Mit nyújtunk</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#portfolio">Munkáink</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Kapcsolat</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+  {% assign lang = page.lang | default: site.default_lang %}    
+  {% assign t = site.data.locales[lang] %}  
+  {% assign prefix = "" %}
+  {% if lang != site.default_lang %}
+    {% assign prefix = "/" | append: lang %}
+  {% endif %}
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand page-scroll" href="{{ prefix }}/#page-top">
+        <img src="/img/smallogo.png" alt="LumenSquad Logo" style="height: 100%;">
+      </a>
     </div>
-    <!-- /.container-fluid -->
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="page-scroll" href="{{ prefix }}#about">{{ t.nav.about }}</a></li>
+        <li><a class="page-scroll" href="{{ prefix }}#services">{{ t.nav.services }}</a></li>
+        <li><a class="page-scroll" href="{{ prefix }}#portfolio">{{ t.nav.portfolio }}</a></li>
+        <li><a class="page-scroll" href="{{ prefix }}#contact">{{ t.nav.contact }}</a></li>
+        <li class="dropdown">
+          {% assign other = site.languages | where_exp:"l","l != lang" | first %}
+          {% if other %}
+            {% if other == site.default_lang %}
+              <a href="/" class="dropdown-toggle"> {{ other | upcase }} </a>
+            {% else %}
+              <a href="/{{ other }}/" class="dropdown-toggle"> {{ other | upcase }} </a>
+            {% endif %}
+          {% endif %}
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>

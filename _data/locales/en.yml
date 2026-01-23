@@ -1,0 +1,12 @@
+nav:
+  about: "About"
+  services: "Services"
+  portfolio: "Portfolio"
+  contact: "Contact"
+contact:
+  heading: "Get in touch!"
+  paragraph: "Send us an email (click the envelope) or call us at <a href='tel:+36703170825'>+36 70 317 0825</a>"
+  email_label: "{{ site.email }}"
+home:
+  header_title: "LumenSquad"
+  header_sub: "Creative development & design"
